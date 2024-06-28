@@ -1,4 +1,4 @@
-#Author: Alexander Dixon
+#Author: captainmyth
 #Date: 06/28/2024
 #Description: A simple calculator using Python and tkinter
 import tkinter as tk
