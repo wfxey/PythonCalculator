@@ -35,10 +35,10 @@ def equals():
 def buttonPress(button):
     global equation
     global last_button_press
-    if str(button).isdigit() or button == ".":
+    if str(button).isdigit():
         equation += str(button)
         last_button_press = "number"
-    elif button in "+-*/":
+    elif button in "+-*/" or button == ".":
         if last_button_press != "operand":
             equation += str(button)
             last_button_press = "operand"
