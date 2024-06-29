@@ -18,6 +18,7 @@ root.grid_rowconfigure(0, weight=1)
 #Variables
 equation = ""
 calculation = tk.StringVar()
+last_button_press = ""
 
 #Button clicks and logic
 def clearAll():
@@ -33,7 +34,14 @@ def equals():
     
 def buttonPress(button):
     global equation
-    equation = equation + str(button)
+    global last_button_press
+    if str(button).isdigit() or button == ".":
+        equation += str(button)
+        last_button_press = "number"
+    elif button in "+-*/":
+        if last_button_press != "operand":
+            equation += str(button)
+            last_button_press = "operand"
     calculation.set(equation)
 
 #Creating the Frames and packing them
