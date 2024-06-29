@@ -30,6 +30,7 @@ def equals():
     global equation
     result = str(eval(equation))
     calculation.set(result)
+    history.insert(tk.END, f"{equation} = {result}\n")
     equation = ""
     
 def buttonPress(button):
@@ -55,6 +56,8 @@ keyboard_row_two = tk.Frame(root)
 keyboard_row_two.pack(expand=True,fill="both")
 keyboard_row_three = tk.Frame(root)
 keyboard_row_three.pack(expand=True,fill="both")
+history_frame = tk.Frame(root)
+history_frame.pack(side=tk.TOP, expand=True, fill="both")
 
 #Creating the label/buttons
 calculator =   tk.Entry(results, textvariable=calculation, borderwidth=2, relief='sunken')
@@ -75,6 +78,10 @@ minus       =   tk.Button(keyboard_row_two, text="-", command=lambda: buttonPres
 divide      =   tk.Button(keyboard_row_zero, text="/", command=lambda: buttonPress("/"))
 multiply    =   tk.Button(keyboard_row_one, text="*", command=lambda: buttonPress("*"))
 decimal     =   tk.Button(keyboard_row_three, text=".", command=lambda: buttonPress("."))
+history_label = tk.Label(history_frame, text="History")
+history_label.pack(side=tk.TOP)
+history     =   tk.Text(history_frame)
+history.pack(expand=True, fill="both")
 
 #Setting up the buttons
 calculator.pack(side=tk.TOP, expand=True, fill="both", padx=10, pady=10)
