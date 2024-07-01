@@ -1,7 +1,10 @@
 <div align="center">
   
 # PythonCalculator
+
 *Forked from @captainmyth*
+
+*This is just an example of how you could continue to make it.*
 
 [![GitHub release](https://img.shields.io/github/release/captainmyth/PythonCalculator?include_prereleases=&sort=semver&color=blue)](https://github.com/captainmyth/PythonCalculator/releases/)
 [![issues - PythonCalculator](https://img.shields.io/github/issues/captainmyth/PythonCalculator)](https://github.com/captainmyth/PythonCalculator/issues)
