@@ -9,6 +9,8 @@
 [![GitHub release](https://img.shields.io/github/release/captainmyth/PythonCalculator?include_prereleases=&sort=semver&color=blue)](https://github.com/captainmyth/PythonCalculator/releases/)
 [![issues - PythonCalculator](https://img.shields.io/github/issues/captainmyth/PythonCalculator)](https://github.com/captainmyth/PythonCalculator/issues)
 
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/rfrMnA4XCc)
+
 </div>
 
 ## Description
